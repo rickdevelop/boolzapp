@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Boolzapp-alternativo</title>
+  </head>
+  <body>
+
+    <div id="app_container">
+
+      <div class="app_left searchAndContacts">
+        <nav class="general_options">
+          <div class="profile_pic_cnt">
+            <img class="user_pic" src="assets/profilePic.jpeg" alt="">
+          </div>
+            <i class="icon fas fa-circle-notch"></i>
+            <i class="icon far fa-comment-alt"></i>
+            <i class="icon fas fa-ellipsis-v"></i>
+        </nav>
+        <div class="search_bar_cnt">
+          <div class="search_bar">
+            <i class="fas fa-search"></i>
+            <input id="search_bar_input" type="text" placeholder="Cerca o inizia una nuova Chat" value="">
+          </div>
+        </div>
+        <div class="contacts_list">
+          <div class="contact template">
+            <div class="contact_photo">
+              <div class="profile_pic_cnt">
+                <img class="contact_pic" src="assets/profilePic.jpeg" alt="">
+              </div>
+            </div>
+            <div class="contact_chat_data">
+              <div class="contact_chat_name_and_message">
+                <h2 class="contact_name">Utente</h2>
+                <p class="last_message">Ciao come va la vita</p>
+              </div>
+              <div class="contact_chat_icons">
+                <p class="last_received_time">Ieri</p>
+                <img class="nav_icon" src="assets/hide.svg">
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+      <div class="app_right currentChat">
+        <nav class="conversation_nav">
+            <div class="contact_photo">
+              <div class="profile_pic_cnt">
+                <img class="contact_pic" src="assets/profilePic.jpeg" alt="">
+              </div>
+            </div>
+            <div class="contact_data">
+              <h2 class="contact_name">Utente</h2>
+              <p class="last_access">Ultimo accesso alle 21.56</p>
+            </div>
+          <div class="chat_actions">
+            <i class="icon fas fa-search"></i>
+            <i class="icon fas fa-paperclip"></i>
+            <i class="icon fas fa-ellipsis-v"></i>
+
+          </div>
+        </nav>
+        <div class="messages_area">
+          <div class="message user_message template">
+            <p class="message_text">
+            Ciao come va la vita!qui tutto bene
+          </p>
+            <span class="message_time">15.15</span>
+            <div class="dropdown_menu message_actions waiting">
+              <i class="fas fa-caret-down"></i>
+              <ul class="dropdown_options">
+                <li><a href="">Info Messaggio</a></li>
+                <li class="delete"><a href="#">Elimina Messaggio</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="message contact_message template">
+            <p class="message_text">
+             Ciao come va la vita?Qui tutto bene
+          </p>
+          <span class="message_time">15.15 <img class="isRead" src="assets/hide.svg"></span>
+          <div class="dropdown_menu message_actions waiting">
+            <i class="fas fa-caret-down"></i>
+            <ul class="dropdown_options">
+              <li><a href="">Info Messaggio</a></li>
+              <li class="delete"><a href="#">Cancella Messaggio</a></li>
+            </ul>
+          </div>
+        </div>
+
+        </div>
+        <div class="typing_area">
+          <i class="icon far fa-smile"></i>
+          <div class="message_bar">
+            <input id="message_input" type="text" placeholder="Scrivi un messaggio" value="">
+          </div>
+
+          <img id="trigger_mic"class="nav_icon" src="assets/mic.svg">
+          <img id="send_message" class="nav_icon" src="assets/send.svg">
+
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <script src="main.js" charset="utf-8"></script>
+
+
+  </body>
+</html>
